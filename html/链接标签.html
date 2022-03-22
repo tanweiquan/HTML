@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接标签学习</title>
+
+</head>
+<body>
+    <!-- a标签
+        href：必填，表示要跳转到哪个页面
+        target：表示窗口在哪里打开，（在原标签页打开还是在新标签页打开）
+            _blank：在新标签中打开
+            _self：在自己标签页打开，默认的
+
+     -->
+<a href="基本标签.html" target="_blank">点击我跳转到入门1页面</a>
+<a href="https://www.baidu.com">点击我跳转到百度</a>
+
+    <!-- 嵌套图片，点击图片跳转页面 -->
+<a href="https://www.baidu.com">
+    <img src="../resources/image/2.jpg" alt="图像加载失败" title="图像如图" width="300" height="600">
+</a>
+
+
+    <!-- 锚链接 
+      1、需要一个锚标记
+      2、跳转到标记
+      #
+    --> 
+    <a name="top">顶部</a>   <!-- name给标签命名，标记位置 -->
+    很多内容
+    很多内容
+    很多内容
+    很多内容
+    <a href="#top">点击回到页面顶部</a>  <!-- 点击跳转 -->
+
+    <!-- 跳转到其他页面的特定位置 -->
+    <a name="down">顶部</a>    <!-- 到基本标签.html页面给该页的某个标签命名，标记位置 -->
+    <a href="基本标签.html">点击我跳转到基本标签.html页面的down位置</a>  <!-- 点击跳转 -->
+  
+
+    <!-- 功能性链接
+        邮件链接：mailto
+        QQ链接：在QQ推广里弄会生成对应的a标签，直接拿生成的a标签使用即可
+    -->
+    <a href="mailto:1274681067@qq.com">点击联系我</a>
+    
+</body>
+</html>
